@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=DM+Serif+Display&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-stone-100 font-sans antialiased min-h-screen;
+    background-color: #0c0a08;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-ink-900/55 border border-stone-800/80 backdrop-blur-md;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #3f3a33 transparent;
+  }
+}
